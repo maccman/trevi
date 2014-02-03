@@ -32,7 +32,7 @@ module <%= @name.camel_case %>
     configure do
       set :database, lambda {
         ENV['DATABASE_URL'] ||
-          "postgres://localhost:5432/subme_#{environment}"
+          "postgres://localhost:5432/<%= @name.file_name %>_#{environment}"
       }
     end
 
@@ -55,7 +55,7 @@ module <%= @name.camel_case %>
     end
 
     use Rack::Deflater
-    use Rack::BestStandardsSupport
+    use Rack::Standards
 
     use Routes::Static
 

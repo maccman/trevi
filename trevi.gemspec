@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "trevi"
   spec.version       = Trevi::VERSION
   spec.authors       = ["Alex MacCaw"]
-  spec.email         = ["maccman@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.email         = ["alex@alexmaccaw.com"]
+  spec.description   = %q{An opinionated Sinatra structure}
+  spec.summary       = %q{An opinionated Sinatra structure}
+  spec.homepage      = "http://github.com/maccman/trevi"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
