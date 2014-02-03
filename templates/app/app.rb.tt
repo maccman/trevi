@@ -11,7 +11,6 @@ Dotenv.load
 
 # Require base
 require 'sinatra/base'
-require 'rack/best_standards_support'
 require 'active_support/core_ext/string'
 require 'active_support/core_ext/array'
 require 'active_support/core_ext/hash'
