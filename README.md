@@ -1,29 +1,15 @@
 # Trevi
 
-TODO: Write a gem description
+Trevi is a generator for building an opinionated Sinatra structure.
 
-## Installation
+It includes, amongst other things:
 
-Add this line to your application's Gemfile:
-
-    gem 'trevi'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install trevi
+* Mountable routes
+* Sprockets for assets
+* Sequel for DB
 
 ## Usage
 
-TODO: Write usage instructions here
+  gem install trevi
 
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+  trevi app_name
