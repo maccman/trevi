@@ -1,0 +1,5 @@
+module <%= @name.camel_case %>
+  module Extensions
+    autoload :Assets, 'app/extensions/assets'
+  end
+end

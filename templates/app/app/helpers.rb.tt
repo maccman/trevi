@@ -1,0 +1,4 @@
+module <%= @name.camel_case %>
+  module Helpers
+  end
+end

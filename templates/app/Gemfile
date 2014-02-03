@@ -1,0 +1,30 @@
+source 'https://rubygems.org'
+ruby '2.0.0'
+
+gem 'sinatra', require: 'sinatra/base'
+gem 'sinatra-contrib', github: 'maccman/sinatra-contrib'
+gem 'unicorn'
+gem 'erubis'
+gem 'i18n'
+gem 'activesupport'
+gem 'rake'
+gem 'builder'
+gem 'json', '~> 1.7.7'
+
+group :assets do
+  gem 'sprockets'
+  gem 'uglifier'
+  gem 'closure-compiler'
+  gem 'yui-compressor'
+  gem 'coffee-script'
+  gem 'eco'
+  gem 'stylus'
+  gem 'stylus-source', '0.31.0'
+  gem 'dalli'
+  gem 'memcachier'
+end
+
+group :development do
+  gem 'thin'
+  gem 'debugger', require: 'ruby-debug'
+end

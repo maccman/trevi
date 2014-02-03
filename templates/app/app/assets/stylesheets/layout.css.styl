@@ -1,0 +1,27 @@
+//= require_self
+//= require_tree .
+
+@import './mixins'
+
+*, *:before, *:after {
+  box-sizing: border-box
+}
+
+body, html {
+  margin: 0
+  padding: 0
+}
+
+body {
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+  background: #FFF
+
+  color: #444
+  font: 19px/1.5em "HelveticaNeue", Helvetica, Arial, sans-serif
+}
+
+a {
+  text-decoration: underline
+  color: #4b525b
+}
