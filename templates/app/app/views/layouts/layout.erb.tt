@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <title><%= @name.camel_case %></title>
 
-  <link rel="stylesheet" type="text/css" href="<%= asset_path 'layout.css' %>">
-  <script src="<%= asset_path 'layout.js' %>"></script>
+  <link rel="stylesheet" type="text/css" href="<%%= asset_path 'layout.css' %>">
+  <script src="<%%= asset_path 'layout.js' %>"></script>
 
-  <%== yield_content :head %>
+  <%%== yield_content :head %>
 </head>
 <body>
-  <%== yield %>
+  <%%== yield %>
 </body>
 </html>

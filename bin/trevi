@@ -5,7 +5,7 @@ require 'trevi'
 
 begin
   require 'trevi/cli'
-  Catapult::CLI.start
+  Trevi::CLI.start
 rescue Interrupt => e
   puts "\nQuitting..."
   exit 1

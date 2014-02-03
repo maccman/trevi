@@ -10,6 +10,7 @@ gem 'activesupport'
 gem 'rake'
 gem 'builder'
 gem 'json', '~> 1.7.7'
+gem 'dotenv'
 
 group :assets do
   gem 'sprockets'
@@ -22,6 +23,12 @@ group :assets do
   gem 'stylus-source', '0.31.0'
   gem 'dalli'
   gem 'memcachier'
+end
+
+group :db do
+  gem 'sequel'
+  gem 'sinatra-sequel'
+  gem 'pg'
 end
 
 group :development do
