@@ -10,6 +10,9 @@ It includes, amongst other things:
 
 ## Usage
 
-  gem install trevi
+Install the gem and create your app:
 
-  trevi app_name
+```shell
+$ gem install trevi
+$ trevi app_name
+```
