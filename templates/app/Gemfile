@@ -33,5 +33,5 @@ gem 'pg'
 
 group :development do
   gem 'thin'
-  gem 'debugger', require: 'ruby-debug'
+  gem 'byebug'
 end
