@@ -1,17 +1,17 @@
 source 'https://rubygems.org'
-ruby '2.1.2'
+ruby '2.1.5'
 
-gem 'sinatra', require: 'sinatra/base'
-gem 'sinatra-contrib', github: 'maccman/sinatra-contrib'
-gem 'rack-standards'
-gem 'unicorn'
+gem 'activesupport'
+gem 'builder'
+gem 'dotenv'
 gem 'erubis'
 gem 'i18n'
-gem 'activesupport'
-gem 'rake'
-gem 'builder'
 gem 'json', '~> 1.7.7'
-gem 'dotenv'
+gem 'puma'
+gem 'rack-standards'
+gem 'rake'
+gem 'sinatra', require: 'sinatra/base'
+gem 'sinatra-contrib', github: 'maccman/sinatra-contrib'
 
 # Assets
 gem 'sprockets'
@@ -32,6 +32,12 @@ gem 'sinatra-sequel'
 gem 'pg'
 
 group :development do
-  gem 'thin'
-  gem 'byebug'
+  gem 'foreman'
+end
+
+group :test do
+  gem 'pry'
+  gem 'rack-test'
+  gem 'rspec'
+  gem 'webmock'
 end

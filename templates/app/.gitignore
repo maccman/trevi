@@ -1,4 +1,4 @@
 tmp
 .DS_Store
-.env
+.env*
 mails
