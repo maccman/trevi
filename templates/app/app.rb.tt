@@ -1,13 +1,19 @@
 require 'rubygems'
 require 'bundler'
 
+# Set default env
+ENV['RACK_ENV'] ||= 'development'
+
 # Setup load paths
 Bundler.require
 $: << File.expand_path('../', __FILE__)
 $: << File.expand_path('../lib', __FILE__)
 
+# Dotenv load specific vars
 require 'dotenv'
-Dotenv.load
+Dotenv.load(
+  File.expand_path("../.env.#{ENV['RACK_ENV']}", __FILE__),
+  File.expand_path("../.env",  __FILE__))
 
 # Require base
 require 'sinatra/base'
@@ -49,6 +55,8 @@ module <%= @name.camel_case %>
           secret: ENV['SESSION_SECRET']
     end
 
+    Dir['config/initializers/*.rb'].sort.each { |file| require file }
+
     use Rack::Deflater
     use Rack::Standards
 
@@ -63,4 +71,5 @@ module <%= @name.camel_case %>
   end
 end
 
+include <%= @name.camel_case %>
 include <%= @name.camel_case %>::Models
